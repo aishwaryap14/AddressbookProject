@@ -10,19 +10,24 @@ public class AddBookMain {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         System.out.println("Welcome to Address Book");
+
         do {
             System.out.println("Enter your choice: \n1.Add Address Book \n2.Display Address Book" +
-                    "\n3.Display contact details ");
+                    "\n3.Add contact details ");
           choice = scanner.nextInt();
             switch (choice) {
                 case 1: addBookFun.createAddressBook();
                 break;
                 case 2: addBookFun.displayAddressBook();
                 break;
+                case 3: addBookFun.createContact();
+                break;
+                case 4: addBookFun.displayContact();
+                break;
                 default:
                     System.out.println("Entered Wrong choice code");
             }
-        }while (choice<4);
+        }while (choice<9);
 
 
     }
