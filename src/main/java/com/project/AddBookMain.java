@@ -13,7 +13,7 @@ public class AddBookMain {
 
         do {
             System.out.println("Enter your choice: \n1.Add Address Book \n2.Display Address Book" +
-                    "\n3.Add contact details ");
+                    "\n3.Add contact details \n4.Display contact details \n5.Edit/Modify contact details  ");
           choice = scanner.nextInt();
             switch (choice) {
                 case 1: addBookFun.createAddressBook();
@@ -23,6 +23,10 @@ public class AddBookMain {
                 case 3: addBookFun.createContact();
                 break;
                 case 4: addBookFun.displayContact();
+                break;
+                case 5:addBookFun.editContact();
+                break;
+                case 6:addBookFun.deleteContact();
                 break;
                 default:
                     System.out.println("Entered Wrong choice code");
